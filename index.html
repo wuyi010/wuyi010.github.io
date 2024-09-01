@@ -5,78 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>吴学龙 - 个人主页</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
-        h1, h2 { color: #2c3e50; }
-        ul { list-style-type: none; padding: 0; }
-        ul li { margin: 5px 0; }
-        .section { margin-bottom: 20px; }
-        .contact { margin-top: 10px; }
-        a { text-decoration: none; color: #0073e6; }
-        a:hover { text-decoration: underline; }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 800px;
+            width: 100%;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 5px 0;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .contact {
+            margin-top: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: #0073e6;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <h1>吴学龙</h1>
-    <div class="contact">
-        <p><strong>研究方向：</strong>计算机视觉、实时语义分割、自动驾驶感知</p>
-        <p><strong>GitHub：</strong><a href="https://github.com/wuyi010">wuyi010</a></p>
-        <p><strong>电子邮箱：</strong>xuelong.wu2025@outlook.com</p>
-    </div>
+    <div class="container">
+        <h1>吴学龙</h1>
+        <div class="contact">
+            <p><strong>研究方向：</strong>计算机视觉、实时语义分割、自动驾驶感知</p>
+            <p><strong>GitHub：</strong><a href="https://github.com/wuyi010">wuyi010</a></p>
+            <p><strong>电子邮箱：</strong>xuelong.wu2025@outlook.com</p>
+        </div>
 
-    <div class="section">
-        <h2>新闻</h2>
-        <p>[2024.08] 新的研究成果即将发布。</p>
-    </div>
+        <div class="section">
+            <h2>教育经历</h2>
+            <p><strong>中国地质大学（北京）</strong> 硕士 专业：软件工程 2022-2025</p>
+            <p><strong>北方工业大学</strong> 本科 专业：电气工程及其自动化（前1%） 2015-2019</p>
+        </div>
 
-    <div class="section">
-        <h2>教育经历</h2>
-        <p><strong>中国地质大学（北京）</strong> 硕士 专业：软件工程 2022-2025</p>
-        <p><strong>北方工业大学</strong> 本科 专业：电气工程及其自动化（前1%） 2015-2019</p>
-    </div>
+        <div class="section">
+            <h2>工作经历</h2>
+            <ul>
+                <li><strong>北京航空航天大学（实习）</strong> 车路一体化智能交通全国重点实验室</li>
+                <li><strong>上海君协光电科技发展有限公司</strong> 热电池系统算法优化，软件开发、测试，软硬件调试，数据处理</li>
+                <li><strong>中国科学院软件所</strong> C++开发工程师 战略筹划、数学建模、仿真平台开发</li>
+                <li><strong>中国航天科工集团第二研究院</strong> 软件开发、系统联调、数据分析</li>
+            </ul>
+        </div>
 
-    <div class="section">
-        <h2>工作经历</h2>
-        <ul>
-            <li><strong>北京航空航天大学（实习）</strong> 车路一体化智能交通全国重点实验室</li>
-            <li><strong>上海君协光电科技发展有限公司</strong> 热电池系统算法优化，软件开发、测试，软硬件调试，数据处理</li>
-            <li><strong>中国科学院软件所</strong> C++开发工程师 战略筹划、数学建模、仿真平台开发</li>
-            <li><strong>中国航天科工集团第二研究院</strong> 软件开发、系统联调、数据分析</li>
-        </ul>
-    </div>
+        <div class="section">
+            <h2>专业技能</h2>
+            <ul>
+                <li>熟练掌握Python，熟悉C++，3年工作经验</li>
+                <li>熟悉机器学习、深度学习及Pytorch框架</li>
+                <li>掌握计算机视觉传统算法与深度学习模型，了解CUDA、GPU并行计算和分布式训练</li>
+                <li>熟悉Qt框架、OpenCV库、3D地理空间库、跨平台开发</li>
+            </ul>
+        </div>
 
-    <div class="section">
-        <h2>专业技能</h2>
-        <ul>
-            <li>熟练掌握Python，熟悉C++，3年工作经验</li>
-            <li>熟悉机器学习、深度学习及Pytorch框架</li>
-            <li>掌握计算机视觉传统算法与深度学习模型，了解CUDA、GPU并行计算和分布式训练</li>
-            <li>熟悉Qt框架、OpenCV库、3D地理空间库、跨平台开发</li>
-        </ul>
-    </div>
+        <div class="section">
+            <h2>项目经历</h2>
+            <ul>
+                <li><strong>低空无人机语义分割PIDNet</strong> 中国科学院自动化研究所与中国地质大学（北京）合作</li>
+                <li><strong>红外行人图像分割</strong> 使用纯C++实现图像处理与红外行人分割算法</li>
+                <li><strong>基于虚幻引擎UE5超大规模路网推演系统</strong> 自动驾驶仿真与交通仿真</li>
+                <li><strong>战场环境模拟</strong> 3D地图可视化与战场环境推演平台开发</li>
+                <li><strong>热电池放电控制系统与数据处理系统</strong> 高精度放电控制与数据采集</li>
+            </ul>
+        </div>
 
-    <div class="section">
-        <h2>项目经历</h2>
-        <ul>
-            <li><strong>低空无人机语义分割PIDNet</strong> 中国科学院自动化研究所与中国地质大学（北京）合作</li>
-            <li><strong>红外行人图像分割</strong> 使用纯C++实现图像处理与红外行人分割算法</li>
-            <li><strong>基于虚幻引擎UE5超大规模路网推演系统</strong> 自动驾驶仿真与交通仿真</li>
-            <li><strong>战场环境模拟</strong> 3D地图可视化与战场环境推演平台开发</li>
-            <li><strong>热电池放电控制系统与数据处理系统</strong> 高精度放电控制与数据采集</li>
-        </ul>
-    </div>
+        <div class="section">
+            <h2>主要获奖情况</h2>
+            <ul>
+                <li>国家级、省级、校级科技竞赛20余项</li>
+                <li>获得国家奖学金等16余项</li>
+                <li>中国航天科工集团第二研究院栉风沐雨奖、优秀师徒三等奖</li>
+            </ul>
+        </div>
 
-    <div class="section">
-        <h2>主要获奖情况</h2>
-        <ul>
-            <li>国家级、省级、校级科技竞赛20余项</li>
-            <li>获得国家奖学金等16余项</li>
-            <li>中国航天科工集团第二研究院栉风沐雨奖、优秀师徒三等奖</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>个人评价</h2>
-        <p>拥有广泛的跨领域知识，熟悉电气、控制系统集成等专业知识。掌握C++和Python语言，应用机器学习和深度学习技术，在嵌入式开发、软件开发和图像语义分割项目中积累了实践经验。致力于模型训练和算法优化，对模型训练、部署、环境感知应用方向有兴趣。</p>
+        <div class="section">
+            <h2>个人评价</h2>
+            <p>拥有广泛的跨领域知识，熟悉电气、控制系统集成等专业知识。掌握C++和Python语言，应用机器学习和深度学习技术，在嵌入式开发、软件开发和图像语义分割项目中积累了实践经验。致力于模型训练和算法优化，对模型训练、部署、环境感知应用方向有兴趣。</p>
+        </div>
     </div>
 </body>
 </html>
