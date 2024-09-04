@@ -1,113 +1,139 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>吴学龙 - 个人主页</title>
+    <title>吴学龙的简历</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
             background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
         }
-        .container {
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
+        .resume-container {
             max-width: 800px;
-            width: 100%;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1, h2 {
-            color: #2c3e50;
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+        .header-content {
+            flex: 1;
+        }
+        .header img {
+            margin-left: 20px;
+            width: 84px;
+            height: 120px;
+        }
+        h1 {
+            color: #333;
+            margin: 0;
+        }
+        h2 {
+            color: #444;
+            margin-top: 20px;
+            text-align: left;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        p, ul {
+            text-align: left;
+            line-height: 1.6;
+            color: #555;
         }
         ul {
-            list-style-type: none;
-            padding: 0;
+            padding-left: 20px;
         }
-        ul li {
-            margin: 5px 0;
+        .gif-container {
+            margin-top: 30px;
+            text-align: center;
         }
-        .section {
-            margin-bottom: 20px;
-        }
-        .contact {
-            margin-top: 10px;
-        }
-        a {
-            text-decoration: none;
-            color: #0073e6;
-        }
-        a:hover {
-            text-decoration: underline;
+        .gif-container img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>吴学龙</h1>
-        <div class="contact">
-            <p><strong>研究方向：</strong>计算机视觉、实时语义分割、自动驾驶感知</p>
-            <p><strong>GitHub：</strong><a href="https://github.com/wuyi010">wuyi010</a></p>
-            <p><strong>电子邮箱：</strong>xuelong.wu2025@outlook.com</p>
+    <div class="resume-container">
+        <div class="header">
+            <div class="header-content">
+                <h1>吴学龙</h1>
+                <p>研究方向：计算机视觉、实时语义分割、自动驾驶感知</p>
+                <p>
+                    GitHub：<a href="https://github.com/wuyi010" target="_blank">https://github.com/wuyi010</a><br>
+                    电子邮箱：<a href="mailto:xuelong.wu2025@outlook.com">xuelong.wu2025@outlook.com</a>,
+                    <a href="mailto:wuxuelong010@163.com">wuxuelong010@163.com</a>
+                </p>
+            </div>
+            <img src="wxl.png" alt="吴学龙的照片">
         </div>
 
-        <div class="section">
-            <h2>教育经历</h2>
-            <p><strong>中国地质大学（北京）</strong> 硕士 专业：软件工程 2022-2025</p>
-            <p><strong>北方工业大学</strong> 本科 专业：电气工程及其自动化（前1%） 2015-2019</p>
+        <h2>教育经历</h2>
+        <p>中国地质大学（北京） 硕士 专业：软件工程 2022-2025</p>
+        <p>北方工业大学 本科 专业：电气工程及其自动化（前1%） 2015-2019</p>
+
+        <h2>工作经历</h2>
+        <p>北京航空航天大学（实习）：车路一体化智能交通全国重点实验室+参与大模型、感知、预测规划一体化、仿真等研究工作</p>
+        <p>上海君协光电科技发展有限公司：负责热电池系统的算法优化，软件开发、测试，软硬件调试，数据处理。</p>
+        <p>中国科学院软件所：C++开发工程师、负责战略筹划+数学建模+仿真平台开发+技术方案设计。</p>
+        <p>中国航天科工集团第二研究院 助理工程师
+            型号在设计、研制、试验等阶段工作如软件开发、系统联调、数据分析等。</p>
+
+        <h2>专业技能</h2>
+        <ul>
+            <li>熟练掌握Python，熟悉C++语言，4年工作经验。</li>
+            <li>熟悉机器学习、深度学习等相关算法与应用，熟悉Pytorch框架。</li>
+            <li>熟悉计算机视觉传统算法，CNN/Transformer等深度学习模型，了解CUDA和GPU并行计算原理，分布式训练。</li>
+            <li>能够基于论文和开源代码，在Linux系统对关键算法进行训练/推理、优化与性能调优。</li>
+            <li>了解C++ 11、14、17特性，STL标准库，网络编程，串口通信，多线程，常用设计模式。</li>
+            <li>熟悉Qt框架、OpenCV库，3D地理空间的C++库、Libevent库、跨平台开发。</li>
+            <li>熟悉航天大型系统原理，具备系统联调，各类环境试验，现场数据分析。</li>
+            <li>软件著作权2项，发明专利1项、1篇SCI。</li>
+        </ul>
+
+        <h2>项目经历</h2>
+        <p><strong>低空无人机语义分割PIDNet</strong> 中国科学院自动化研究所与中国地质大学（北京）合作</p>
+        <p>算法的设计和搭建：实现一个模型训练框架。算法结合DDRNet，采用PIDNet+注意力机制+深度聚合金字塔池化，解决高分辨率无人机图像中复杂背景干扰和小目标分割性能低的问题。模型评估与调优：采用合适的学习率调整算法，超参数设计并监控模型性能评估指标，通过性能测试提高训练效率。部署：采用YS7和OBS Studio + OBS-RTSPServer方式，实现视频推流。</p>
+
+        <p><strong>红外行人图像分割</strong></p>
+        <p>使用纯C++，无依赖外部图像处理库，实现多个基本的图像处理算法，涵盖图像增强、边缘检测等功能。通过深入理解算法内部机制和数据处理流程，在处理速度和内存使用方面进行了优化，提高算法执行效率。使得算法能够在实时或近实时应用中运行，并实现红外行人的图像分割算法。</p>
+        <p><strong>基于虚幻引擎UE5超大规模路网推演系统 自动驾驶仿真与交通仿真</strong> </p>
+        <p>Unreal Engine解析交通仿真SUMO数据，利用Cesium和其它工具创建复杂的地理空间应用和模拟环境。实现自动驾驶车辆仿真，同时支持2000辆车辆实时仿真。采用光线追踪算法对齐笛卡尔坐标系经纬高，Cmake 3D地理空间Cesium Native C++库并使用3D模型导入。架构设计中采用单例、工厂等设计模式搭建整体框架、实时生成交通车辆自动驾驶仿真。</p>
+        <!-- 显示GIF -->
+        <div class="gif-container">
+            <img src="output.gif" alt="项目展示GIF">
         </div>
 
-        <div class="section">
-            <h2>工作经历</h2>
-            <ul>
-                <li><strong>北京航空航天大学（实习）</strong> 车路一体化智能交通全国重点实验室</li>
-                <li><strong>上海君协光电科技发展有限公司</strong> 热电池系统算法优化，软件开发、测试，软硬件调试，数据处理</li>
-                <li><strong>中国科学院软件所</strong> C++开发工程师 战略筹划、数学建模、仿真平台开发</li>
-                <li><strong>中国航天科工集团第二研究院</strong> 软件开发、系统联调、数据分析</li>
-            </ul>
-        </div>
+        <p><strong>战场环境模拟 3D地图可视化与战场环境推演平台开发</strong> </p>
+        <p>项目概述：基于3D地图可视化和地理环境模拟的战场环境构建推演平台开发。项目使用BS和CS混合架构，采用Qt框架，实现装备与人员信息管理模块的界面设计与功能开发。根据GJB438管理规范，编写项目技术方案、平台软件的使用说明。技术栈：Qt框架，虚幻引擎，网络通信，串口通信，多线程，设计模式（单例、观察者等）等。</p>
+        <!-- 显示GIF -->
+        <img src="zch.png" alt="" width="300" height="200">
+        <img src="zch2.jpg" alt="" width="300" height="200">
 
-        <div class="section">
-            <h2>专业技能</h2>
-            <ul>
-                <li>熟练掌握Python，熟悉C++，3年工作经验</li>
-                <li>熟悉机器学习、深度学习及Pytorch框架</li>
-                <li>掌握计算机视觉传统算法与深度学习模型，了解CUDA、GPU并行计算和分布式训练</li>
-                <li>熟悉Qt框架、OpenCV库、3D地理空间库、跨平台开发</li>
-            </ul>
-        </div>
+        <p><strong>热电池放电控制系统与数据处理系统 高精度放电控制与数据采集</strong></p>
+        <p>项目概述：采用高精度时钟模块，多线程读取Dewesoft电压，优化电子负载控制算法。实现高精度放电控制，采集电压延迟从30ms降低到10ms内，解决电子负载读取电压延迟导致热电池放电功率异常问题。技术栈：C++、Qt、多线程、电子负载API与Dewesoft API。</p>
 
-        <div class="section">
-            <h2>项目经历</h2>
-            <ul>
-                <li><strong>低空无人机语义分割PIDNet</strong> 中国科学院自动化研究所与中国地质大学（北京）合作</li>
-                <li><strong>红外行人图像分割</strong> 使用纯C++实现图像处理与红外行人分割算法</li>
-                <li><strong>基于虚幻引擎UE5超大规模路网推演系统</strong> 自动驾驶仿真与交通仿真</li>
-                <li><strong>战场环境模拟</strong> 3D地图可视化与战场环境推演平台开发</li>
-                <li><strong>热电池放电控制系统与数据处理系统</strong> 高精度放电控制与数据采集</li>
-            </ul>
-        </div>
+        <h2>主要获奖情况</h2>
+        <p>国家级、省级、校级科技竞赛如电子设计大赛、节能减排、蓝桥杯等20余项，获得全国电子行业人才证书</p>
+        <p>获得国家奖学金等包括学习、实践、德智体美等全额奖学金等16余项</p>
+        <p>中国航天科工集团第二研究院第二总体部栉风沐雨奖</p>
+        <p>中国航天科工集团第二研究院第二总体部优秀师徒三等奖</p>
 
-        <div class="section">
-            <h2>主要获奖情况</h2>
-            <ul>
-                <li>国家级、省级、校级科技竞赛20余项</li>
-                <li>获得国家奖学金等16余项</li>
-                <li>中国航天科工集团第二研究院栉风沐雨奖、优秀师徒三等奖</li>
-            </ul>
-        </div>
+        <h2>个人评价</h2>
+        <p>拥有广泛的跨领域知识，熟悉电气、控制系统集成等专业知识。掌握C++和Python语言，应用机器学习和深度学习技术，在嵌入式开发、软件开发和图像语义分割项目中积累了实践经验。致力于模型训练和算法优化，对模型训练、部署、环境感知应用方向有兴趣。</p>
 
-        <div class="section">
-            <h2>个人评价</h2>
-            <p>拥有广泛的跨领域知识，熟悉电气、控制系统集成等专业知识。掌握C++和Python语言，应用机器学习和深度学习技术，在嵌入式开发、软件开发和图像语义分割项目中积累了实践经验。致力于模型训练和算法优化，对模型训练、部署、环境感知应用方向有兴趣。</p>
-        </div>
+
     </div>
 </body>
 </html>
